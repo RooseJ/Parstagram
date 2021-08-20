@@ -111,7 +111,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gL8-0x-69a">
-                                                    <rect key="frame" x="20" y="394" width="60" height="21"/>
+                                                    <rect key="frame" x="75" y="373" width="60" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -122,11 +122,11 @@
                                                 <constraint firstItem="J2d-o5-URt" firstAttribute="leading" secondItem="Wfl-fY-wz9" secondAttribute="leadingMargin" id="CHP-hm-Iw9"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="J2d-o5-URt" secondAttribute="bottom" constant="21" id="HT2-GW-G6d"/>
                                                 <constraint firstItem="J2d-o5-URt" firstAttribute="top" secondItem="O25-Qi-8D6" secondAttribute="bottom" constant="24" id="M4u-Zd-ssX"/>
-                                                <constraint firstItem="gL8-0x-69a" firstAttribute="leading" secondItem="Wfl-fY-wz9" secondAttribute="leadingMargin" id="dAx-gO-BVL"/>
                                                 <constraint firstItem="O25-Qi-8D6" firstAttribute="top" secondItem="Wfl-fY-wz9" secondAttribute="top" constant="8" id="g16-CJ-VgN"/>
                                                 <constraint firstItem="O25-Qi-8D6" firstAttribute="leading" secondItem="Wfl-fY-wz9" secondAttribute="leading" constant="8" id="j0Q-Kc-c4w"/>
                                                 <constraint firstItem="J2d-o5-URt" firstAttribute="top" secondItem="O25-Qi-8D6" secondAttribute="bottom" constant="24" id="lty-1g-tbY"/>
-                                                <constraint firstItem="gL8-0x-69a" firstAttribute="bottom" secondItem="Wfl-fY-wz9" secondAttribute="bottomMargin" id="vuq-zC-ukb"/>
+                                                <constraint firstItem="gL8-0x-69a" firstAttribute="leading" secondItem="J2d-o5-URt" secondAttribute="trailing" constant="10" id="qWW-kk-VC6"/>
+                                                <constraint firstItem="gL8-0x-69a" firstAttribute="bottom" secondItem="Wfl-fY-wz9" secondAttribute="bottomMargin" constant="-21" id="vuq-zC-ukb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -168,6 +168,28 @@
                                             <outlet property="commentLabel" destination="7yg-gD-vJJ" id="rij-tq-vHj"/>
                                             <outlet property="nameLabel" destination="zT8-gt-9CR" id="2Ck-uL-atK"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="Bos-is-1V3">
+                                        <rect key="frame" x="0.0" y="514.33333396911621" width="428" height="42.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bos-is-1V3" id="J8b-Y9-d8q">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="42.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="126-ER-XFF">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="388" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="126-ER-XFF" firstAttribute="leading" secondItem="J8b-Y9-d8q" secondAttribute="leadingMargin" id="9zd-Uq-toL"/>
+                                                <constraint firstItem="126-ER-XFF" firstAttribute="top" secondItem="J8b-Y9-d8q" secondAttribute="topMargin" id="FYn-Sf-54e"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="126-ER-XFF" secondAttribute="trailing" id="RXX-Gr-noq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="126-ER-XFF" secondAttribute="bottom" id="mCj-ts-tiu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
