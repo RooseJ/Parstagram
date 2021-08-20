@@ -20,6 +20,7 @@
 		B337ED0326C748A700197290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B337ED0126C748A700197290 /* LaunchScreen.storyboard */; };
 		B337ED0E26C748A800197290 /* ParstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B337ED0D26C748A800197290 /* ParstagramTests.swift */; };
 		B337ED1926C748A800197290 /* ParstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B337ED1826C748A800197290 /* ParstagramUITests.swift */; };
+		B35BEC4B26D04FE300CE773B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BEC4A26D04FE300CE773B /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B337ED1426C748A800197290 /* ParstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B337ED1826C748A800197290 /* ParstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParstagramUITests.swift; sourceTree = "<group>"; };
 		B337ED1A26C748A800197290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35BEC4A26D04FE300CE773B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		D4695E144DAA5D32C3F4279D /* Pods_Parstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				B314C19126C753370028BCB9 /* LoginViewController.swift */,
 				B314C19326C75FC50028BCB9 /* CameraViewController.swift */,
 				B314C19526C768870028BCB9 /* PostCell.swift */,
+				B35BEC4A26D04FE300CE773B /* CommentCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				B314C19226C753370028BCB9 /* LoginViewController.swift in Sources */,
 				B337ECF926C748A300197290 /* SceneDelegate.swift in Sources */,
 				B314C19426C75FC50028BCB9 /* CameraViewController.swift in Sources */,
+				B35BEC4B26D04FE300CE773B /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
