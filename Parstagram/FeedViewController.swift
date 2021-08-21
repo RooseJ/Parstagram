@@ -20,6 +20,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     let commentBar = MessageInputBar()
     var showsCommentBar = false
     
+    //Implemeting pull to refresh
+    let myRefreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +38,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
+        
+        //implementing pull to refresh
+        myRefreshControl.addTarget(self, action: #selector(reloadData), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
+    }
+    
+    @objc func reloadData() {
+        tableView.reloadData()
+        self.myRefreshControl.endRefreshing()
+        
     }
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
